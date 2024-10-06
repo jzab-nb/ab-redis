@@ -17,7 +17,7 @@ import xyz.jzab.abredis.client.AbRedisClient;
 @ComponentScan
 public class AbRedisConfig {
     private String host="127.0.0.1";
-    private String port="6379";
+    private Integer port=6379;
     private String pwd="";
 
     @Bean

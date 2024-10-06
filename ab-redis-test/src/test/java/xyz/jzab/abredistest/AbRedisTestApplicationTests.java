@@ -13,6 +13,9 @@ class AbRedisTestApplicationTests {
     @Test
     void contextLoads() {
         abRedisClient.info();
+        System.out.println(abRedisClient.ping( ));
+        System.out.println(abRedisClient.set("jzab", "jzab"));
+        System.out.println(abRedisClient.get("jzab"));
     }
 
 }
